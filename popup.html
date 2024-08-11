@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Keyword Filter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.0.24/tailwind.min.css"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .popup {
+        width: 360px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .popup h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .popup label {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 8px;
+        display: block;
+        text-align: left;
+      }
+      .popup select,
+      .popup input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+      .popup button {
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .popup button:hover {
+        background-color: #0056b3;
+      }
+      .popup .footer {
+        font-size: 12px;
+        color: #888;
+        margin-top: 20px;
+      }
+      .popup .footer a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .popup .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup">
+      <h1><i class="fas fa-filter"></i> Keyword Filter</h1>
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="">-- Select Category --</option>
+        <option value="coding">Coding</option>
+        <option value="music">Music</option>
+        <option value="dance">Dance</option>
+        <option value="sports">Sports</option>
+      </select>
+      <label for="keyword">Enter Keyword:</label>
+      <input type="text" id="keyword" placeholder="Enter keyword" />
+      <button id="saveKeyword"><i class="fas fa-save"></i> Save</button>
+      <div class="footer">
+        <p>
+          Powered by
+          <a href="https://yourwebsite.com" target="_blank">IIT Madras</a>
+        </p>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

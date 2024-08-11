@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Keyword Blur",
+    "version": "1.0",
+    "description": "Blurs YouTube videos that do not contain a specified keyword.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "bee.png",
+        "48": "bee.png",
+        "128": "bee.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
