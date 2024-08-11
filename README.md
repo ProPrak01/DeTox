@@ -1,7 +1,6 @@
-# DeTox : A YouTube Keyword Filter Extension
 <p align="center">
   <img src="bee.png" alt="Bee Logo" width="100" height="100" style="vertical-align: middle;"/>
-  <span style="font-size: 2em; vertical-align: middle;">DeTox: A YouTube Keyword Filter Extension</span>
+  <span style="font-size: 2em; vertical-align: middle;"># DeTox : A YouTube Keyword Filter Extension</span>
 </p>
 
 
