@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "YouTube Keyword Blur",
+    "name": "DeTox",
     "version": "1.0",
     "description": "Blurs YouTube videos that do not contain a specified keyword.",
     "permissions": [

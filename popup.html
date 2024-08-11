@@ -6,14 +6,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.0.24/tailwind.min.css"
-    />
     <style>
       body {
         font-family: "Roboto", sans-serif;
-        background-color: #f0f2f5;
+        background-color: #121212; /* Dark background for contrast */
         margin: 0;
         padding: 0;
         display: flex;
@@ -22,22 +18,45 @@
         height: 100vh;
       }
       .popup {
+        border: 0.4vh solid black;
         width: 360px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: rgba(
+          120,
+          120,
+          120,
+          0.8
+        ); /* Black background with transparency */
+        /* //  border-radius: 12px; */
+        /* box-shadow: 0 8px 16px rgba(251, 225, 76, 0.886); */
         padding: 20px;
         box-sizing: border-box;
         text-align: center;
+        color: #f0c845; /* Light text color for readability */
+        /* transition: transform 0.3s ease, opacity 0.3s ease; */
+      }
+
+      .popup img {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
       .popup h1 {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 20px;
-        color: #333;
+        color: #f8d800; /* Yellow color for the title */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .popup h1 i {
+        margin-right: 10px;
       }
       .popup label {
         font-size: 14px;
-        color: #555;
+        color: #f0f0f0;
         margin-bottom: 8px;
         display: block;
         text-align: left;
@@ -47,23 +66,31 @@
         width: 100%;
         padding: 12px;
         border-radius: 8px;
-        border: 1px solid #ddd;
+        border: 1px solid #444;
         font-size: 16px;
         margin-bottom: 20px;
         box-sizing: border-box;
+        background: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); /* Light background with transparency */
+        color: #f0f0f0; /* Light text color */
       }
       .popup button {
         padding: 12px;
         border-radius: 8px;
         border: none;
-        background-color: #007bff;
-        color: white;
+        background-color: #f8d800; /* Yellow button */
+        color: #121212; /* Dark text color */
         font-size: 16px;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, transform 0.3s ease;
       }
       .popup button:hover {
-        background-color: #0056b3;
+        background-color: #e0c200; /* Darker yellow on hover */
+        transform: scale(1.05); /* Slight zoom effect on hover */
       }
       .popup .footer {
         font-size: 12px;
@@ -71,7 +98,7 @@
         margin-top: 20px;
       }
       .popup .footer a {
-        color: #007bff;
+        color: #f8d800;
         text-decoration: none;
       }
       .popup .footer a:hover {
@@ -81,7 +108,8 @@
   </head>
   <body>
     <div class="popup">
-      <h1><i class="fas fa-filter"></i> Keyword Filter</h1>
+      <img src="bee.png" alt="Bee Logo" />
+      <h1><i class="fas fa-filter"></i> DeTox</h1>
       <label for="category">Select Category:</label>
       <select id="category">
         <option value="">-- Select Category --</option>
