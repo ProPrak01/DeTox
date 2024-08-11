@@ -1,4 +1,4 @@
-how to change the size and location of the bee.img :# DeTox : A YouTube Keyword Filter Extension
+# DeTox : A YouTube Keyword Filter Extension
 <p align="center">
   <img src="bee.png" alt="Bee Logo" width="100" height="100" />
 </p>
