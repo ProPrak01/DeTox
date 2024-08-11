@@ -1,7 +1,9 @@
 # DeTox : A YouTube Keyword Filter Extension
 <p align="center">
   <img src="bee.png" alt="Bee Logo" width="100" height="100" />
-</p>
+</p> 
+
+
 ## Overview
 
 The YouTube Keyword Filter is a Chrome extension designed to enhance your YouTube experience by allowing you to filter out videos based on specific keywords or categories. This extension provides a customizable way to manage the content you see on YouTube by either removing unrelated videos or highlighting those that match your interests.
