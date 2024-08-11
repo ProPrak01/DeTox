@@ -19,7 +19,7 @@ The YouTube Keyword Filter is a Chrome extension designed to enhance your YouTub
 You can either download the ZIP file of this repository or clone it using Git:
 
 bash
-git clone https://github.com/yourusername/your-repository-name.git
+git clone [https://github.com/yourusername/your-repository-name.git](https://github.com/ProPrak01/DeTox)
 
 2. Load the Extension in Chrome
 3. Open Chrome and go to chrome://extensions/.
