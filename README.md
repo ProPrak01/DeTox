@@ -1,6 +1,6 @@
 # <img src="bee.png" alt="Bee Logo" width="60" height="60" style="vertical-align: middle;"/> **DeTox**
 
-### A YouTube Keyword Filter Extension
+### A YouTube Video Filter Extension
 
 ## Overview
 
