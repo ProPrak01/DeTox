@@ -1,4 +1,4 @@
-# YouTube Keyword Filter Extension
+# DeTox : A YouTube Keyword Filter Extension
 
 ## Overview
 
