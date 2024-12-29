@@ -1,29 +1,22 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request , jsonify
 from transformers import pipeline
 
 app = Flask(__name__)
 
-# Initialize the Hugging Face zero-shot classifier
-classifier = pipeline("zero-shot-classification")
+sentiment_pipeline = pipeline("sentiment-analysis")
 
-@app.route('/classify', methods=['POST'])
-def classify():
-    # Extract the list of video titles and the category from the request
-    data = request.json
-    titles = data.get('titles', [])
-    category = data.get('category', '')
+@app.route('/')
+def home():
+    return "Welcome to the Flask App"
 
-    # Perform zero-shot classification for each title
-    results = []
-    for title in titles:
-        result = classifier(title, [category])
-        # Check if the category has the highest score
-        is_match = result['labels'][0].lower() == category.lower()
-        results.append(is_match)
+@app.route('/analysis' , methods=['POST'])
+def analyse_text():
+    data =request.json
+    text = data.get('text','')
 
-    # Return the classification results
-    return jsonify(results)
+    result = sentiment_pipeline(text)
 
-# Vercel's serverless function handler
-def handler(request):
-    return app(request.environ, start_response)
+    return jsonify(result)
+
+if __name__ == '__main__':
+    app.run(debug=True)
